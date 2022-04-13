@@ -63,8 +63,8 @@ def main(argv):
         new_labels_pre.append(pre_label)
         new_labels_post.append(post_label)
 
-  pre_path = os.path.join(args.dataroot, 'pre_response', args.datasest)
-  post_path = os.path.join(args.dataroot, 'post_response', args.datasest)
+  pre_path = os.path.join(args.dataroot, 'pre_response', args.dataset)
+  post_path = os.path.join(args.dataroot, 'post_response', args.dataset)
   if not os.path.exists(pre_path):
     os.makedirs(pre_path)
   if not os.path.exists(post_path):
